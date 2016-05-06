@@ -140,7 +140,7 @@ let crearEditar = (data, tipo) =>
 		encuestas[ind].total++;
 		
 		for(let i=0;i<encuestas[ind].opciones.length ;i++){
-			encuestas[ind].opciones[i].porcentaje = ((encuestas[ind].opciones[i].cantidad)*100)/encuestas[ind].total;
+			encuestas[ind].opciones[i].porcentaje = (encuestas[ind].opciones[i].cantidad*100)/encuestas[ind].total;
 		}
 		insert = true;
 		// console.log(ind, opcion);
